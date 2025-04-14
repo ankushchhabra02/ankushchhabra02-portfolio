@@ -7,6 +7,7 @@ import clsx from "clsx";
 import Link from "next/link";
 
 const Header = () => {
+  // const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <header className="z-[999] relative">
       <motion.div

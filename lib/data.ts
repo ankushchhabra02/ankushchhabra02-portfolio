@@ -2,9 +2,11 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import LaxmiChitFund from "@/public/laxmichitfund.png";
+import Ecommerce from "@/public/ecommerce.png";
+import SubscriptionTracker from "@/public/subscriptiontracker.png";
+import ExpertBuddy from "@/public/expertbuddy.png";
+import Todo from "@/public/todo.png";
 
 export const links = [
   {
@@ -62,25 +64,44 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "LaxmiChitFund",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "LaxmiChitFund is a modern crowdfunding system built with Next.js, leveraging both client-side and server-side rendering.",
+    tags: ["Next.js", "MongoDB", "Tailwind", "Auth.js", "Razorpay API"],
+    imageUrl: LaxmiChitFund,
+    link: "https://github.com/ankushchhabra02/LaxmiChitFund",
   },
   {
-    title: "rmtDev",
+    title: "E-Commerce Website",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "A fully functional E-Commerce Website provides users with a seamless shopping experience, including product browsing, cart management.",
+    tags: ["React", "Express", "MongoDB", , "Context API", "JWT"],
+    imageUrl: Ecommerce,
+    link: "https://github.com/ankushchhabra02/e-commerce-frontend",
   },
   {
-    title: "Word Analytics",
+    title: "Subscription Tracker API",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "SubscriptionTracker-API is a secure, scalable backend for managing user subscriptions. It features JWT auth, email renewal reminders, global error handling, and Arcjet bot protection.",
+    tags: ["Node", "Express", "MongoDB", "JWT", "Upstash"],
+    imageUrl: SubscriptionTracker,
+    link: "https://github.com/ankushchhabra02/SubscriptionTracker-API",
+  },
+  {
+    title: "Todo App",
+    description:
+      "Todo App is a task management tool built with React and Redux. It allows users to add, edit, and delete tasks with smooth state handling and a clean, responsive UI.",
+    tags: ["React", "Redux", "Tailwind", "CRUD"],
+    imageUrl: Todo,
+    link: "https://github.com/ankushchhabra02/todo-reduxToolkit",
+  },
+  {
+    title: "Expert Buddy",
+    description:
+      "This project is a Next.js v15-based implementation of a Figma design. It includes responsive UI components built with Tailwind CSS, ShadCN/UI, Mantine, MagicUI, and Headless UI.",
+    tags: ["Next.js", "Auth.js", "Tailwind", "ShadCN/UI", "Headless UI"],
+    imageUrl: ExpertBuddy,
+    link: "https://github.com/ankushchhabra02/nextjs-home-assignment",
   },
 ] as const;
 
