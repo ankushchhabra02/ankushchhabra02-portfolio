@@ -1,12 +1,35 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaJava, FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import LaxmiChitFund from "@/public/laxmichitfund.png";
 import Ecommerce from "@/public/ecommerce.png";
 import SubscriptionTracker from "@/public/subscriptiontracker.png";
 import ExpertBuddy from "@/public/expertbuddy.png";
 import Todo from "@/public/todo.png";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaNodeJs,
+  FaGitAlt,
+  FaPython,
+  FaFigma,
+} from "react-icons/fa";
+import {
+  SiTypescript,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiMongodb,
+  SiRedux,
+  SiExpress,
+  SiPostman,
+  SiMysql,
+  SiJsonwebtokens,
+  SiVercel,
+  SiFramer,
+  SiRazorpay,
+} from "react-icons/si";
 
 export const links = [
   {
@@ -105,24 +128,31 @@ export const projectsData = [
   },
 ] as const;
 
-export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
-] as const;
+type Skill = {
+  name: string;
+  icon: React.ReactNode;
+};
+
+export const skillsData: Skill[] = [
+  { name: "HTML", icon: React.createElement(FaHtml5) },
+  { name: "CSS", icon: React.createElement(FaCss3Alt) },
+  { name: "JavaScript", icon: React.createElement(FaJs) },
+  { name: "TypeScript", icon: React.createElement(SiTypescript) },
+  { name: "Java", icon: React.createElement(FaJava) },
+  { name: "React", icon: React.createElement(FaReact) },
+  { name: "Next.js", icon: React.createElement(SiNextdotjs) },
+  { name: "Node.js", icon: React.createElement(FaNodeJs) },
+  { name: "Express.js", icon: React.createElement(SiExpress) },
+  { name: "Redux", icon: React.createElement(SiRedux) },
+  { name: "Tailwind CSS", icon: React.createElement(SiTailwindcss) },
+  { name: "MongoDB", icon: React.createElement(SiMongodb) },
+  { name: "MySQL", icon: React.createElement(SiMysql) },
+  { name: "JWT Auth", icon: React.createElement(SiJsonwebtokens) },
+  { name: "Razorpay", icon: React.createElement(SiRazorpay) },
+  { name: "Git", icon: React.createElement(FaGitAlt) },
+  { name: "Postman", icon: React.createElement(SiPostman) },
+  { name: "Figma", icon: React.createElement(FaFigma) },
+  { name: "Framer Motion", icon: React.createElement(SiFramer) },
+  { name: "Vercel", icon: React.createElement(SiVercel) },
+  { name: "Python", icon: React.createElement(FaPython) },
+];
