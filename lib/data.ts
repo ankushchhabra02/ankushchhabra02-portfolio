@@ -80,7 +80,7 @@ export const educationData = [
     description:
       "Completed high school with 80.4%. Built a solid foundation in science, English, and computer applications.",
     icon: React.createElement(LuGraduationCap),
-    date: "2017 - 2019",
+    date: "2018 - 2019",
   },
 ] as const;
 
