@@ -1,5 +1,4 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
 import { FaJava, FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import LaxmiChitFund from "@/public/laxmichitfund.png";
@@ -49,8 +48,8 @@ export const links = [
     hash: "#skills",
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: "Education",
+    hash: "#education",
   },
   {
     name: "Contact",
@@ -58,30 +57,30 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
+export const educationData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "B.E. in Computer Science and Engineering",
+    location: "Chandigarh University, Punjab",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Pursuing a Bachelor's degree with a CGPA of 7.67. Gained strong fundamentals in computer science and hands-on experience through projects, hackathons, and developer communities.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2021 - Present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Intermediate  (CBSE)",
+    location: "Vidhyanjali Academy, Kota",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
+      "Completed senior secondary education with 75.8% in the PCM stream. Developed strong analytical and mathematical skills.",
+    icon: React.createElement(LuGraduationCap),
     date: "2019 - 2021",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "High School (ICSE)",
+    location: "Sacred Heart Hr. Sec. School, Mathura",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Completed high school with 80.4%. Built a solid foundation in science, English, and computer applications.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2017 - 2019",
   },
 ] as const;
 
