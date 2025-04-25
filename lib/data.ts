@@ -88,7 +88,7 @@ export const projectsData = [
   {
     title: "Yappr",
     description:
-      "Yappr is a real-time chat application powered by the MERN stack, Socket.io, and Zustand. It features JWT authentication, online user tracking, and a sleek UI built with TailwindCSS and DaisyUI.",
+      "Yappr is a real-time chat application built with MERN stack, Socket.io, and Zustand. It features JWT auth, user tracking, themes, and a sleek UI with TailwindCSS + DaisyUI.",
     tags: ["MERN", "Socket.io", "TailwindCSS", "Zustand", "JWT", "Axios"],
     imageUrl: Yappr,
     link: "https://github.com/ankushchhabra02/yappr",
@@ -112,7 +112,7 @@ export const projectsData = [
   {
     title: "Subscription Tracker API",
     description:
-      "SubscriptionTracker-API is a secure, scalable backend for managing user subscriptions. It features JWT auth, email renewal reminders, and Arcjet bot protection.",
+      "SubscriptionTracker-API is a secure backend for managing subscriptions with JWT auth, email reminders, and bot protection.",
     tags: ["Node", "Express", "MongoDB", "JWT", "Upstash"],
     imageUrl: SubscriptionTracker,
     link: "https://github.com/ankushchhabra02/SubscriptionTracker-API",
