@@ -5,7 +5,7 @@ import LaxmiChitFund from "@/public/laxmichitfund.png";
 import Ecommerce from "@/public/ecommerce.png";
 import SubscriptionTracker from "@/public/subscriptiontracker.png";
 import ExpertBuddy from "@/public/expertbuddy.png";
-import Todo from "@/public/todo.png";
+import Yappr from "@/public/yappr.png";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -86,6 +86,14 @@ export const educationData = [
 
 export const projectsData = [
   {
+    title: "Yappr",
+    description:
+      "Yappr is a real-time chat application powered by the MERN stack, Socket.io, and Zustand. It features JWT authentication, online user tracking, and a sleek UI built with TailwindCSS and DaisyUI.",
+    tags: ["MERN", "Socket.io", "TailwindCSS", "Zustand", "JWT", "Axios"],
+    imageUrl: Yappr,
+    link: "https://github.com/ankushchhabra02/yappr",
+  },
+  {
     title: "LaxmiChitFund",
     description:
       "LaxmiChitFund is a modern crowdfunding system built with Next.js, leveraging both client-side and server-side rendering.",
@@ -104,19 +112,12 @@ export const projectsData = [
   {
     title: "Subscription Tracker API",
     description:
-      "SubscriptionTracker-API is a secure, scalable backend for managing user subscriptions. It features JWT auth, email renewal reminders, global error handling, and Arcjet bot protection.",
+      "SubscriptionTracker-API is a secure, scalable backend for managing user subscriptions. It features JWT auth, email renewal reminders, and Arcjet bot protection.",
     tags: ["Node", "Express", "MongoDB", "JWT", "Upstash"],
     imageUrl: SubscriptionTracker,
     link: "https://github.com/ankushchhabra02/SubscriptionTracker-API",
   },
-  {
-    title: "Todo App",
-    description:
-      "Todo App is a task management tool built with React and Redux. It allows users to add, edit, and delete tasks with smooth state handling and a clean, responsive UI.",
-    tags: ["React", "Redux", "Tailwind", "CRUD"],
-    imageUrl: Todo,
-    link: "https://github.com/ankushchhabra02/todo-reduxToolkit",
-  },
+
   {
     title: "Expert Buddy",
     description:
