@@ -1,6 +1,6 @@
 import React from "react";
 import { FaJava, FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { LuBriefcase, LuGraduationCap } from "react-icons/lu";
 import LaxmiChitFund from "@/public/laxmichitfund.png";
 import Ecommerce from "@/public/ecommerce.png";
 import SubscriptionTracker from "@/public/subscriptiontracker.png";
@@ -29,6 +29,7 @@ import {
   SiFramer,
   SiRazorpay,
 } from "react-icons/si";
+import { CgWorkAlt } from "react-icons/cg";
 
 export const links = [
   {
@@ -48,8 +49,8 @@ export const links = [
     hash: "#skills",
   },
   {
-    name: "Education",
-    hash: "#education",
+    name: "Experience",
+    hash: "#experience",
   },
   {
     name: "Contact",
@@ -57,30 +58,30 @@ export const links = [
   },
 ] as const;
 
-export const educationData = [
+export const experienceData = [
+  {
+    title: "Frontend Developer Intern",
+    location: "Remote – ExpertBuddy",
+    description:
+      "Built SEO-optimized pages with structured data, dynamic sitemaps, and reusable UI components in Next.js 15 using Tailwind, Shadcn/UI, and Mantine. Improved render performance by 40% and collaborated in Agile teams with Git and daily standups.",
+    icon: React.createElement(LuBriefcase),
+    date: "May 2025 – Present",
+  },
+  {
+    title: "Frontend Developer (Freelance)",
+    location: "Remote – Pichku.com",
+    description:
+      "Redesigned UI with CSS Grid, Flexbox, and SASS, improving page speed by 20%. Ensured responsive design, accessibility, and consistency across browsers and devices.",
+    icon: React.createElement(FaReact),
+    date: "Mar 2023 – May 2023",
+  },
   {
     title: "B.E. in Computer Science and Engineering",
     location: "Chandigarh University, Punjab",
     description:
-      "Pursuing a Bachelor's degree with a CGPA of 7.67. Gained strong fundamentals in computer science and hands-on experience through projects, hackathons, and developer communities.",
+      "Graduated with a CGPA of 7.67. Developed strong computer science fundamentals and gained practical experience through projects, hackathons, and developer communities.",
     icon: React.createElement(LuGraduationCap),
-    date: "2021 - Present",
-  },
-  {
-    title: "Intermediate  (CBSE)",
-    location: "Vidhyanjali Academy, Kota",
-    description:
-      "Completed senior secondary education with 75.8% in the PCM stream. Developed strong analytical and mathematical skills.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019 - 2021",
-  },
-  {
-    title: "High School (ICSE)",
-    location: "Sacred Heart Hr. Sec. School, Mathura",
-    description:
-      "Completed high school with 80.4%. Built a solid foundation in science, English, and computer applications.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2018 - 2019",
+    date: "2021 – 2025",
   },
 ] as const;
 
