@@ -29,7 +29,6 @@ import {
   SiFramer,
   SiRazorpay,
 } from "react-icons/si";
-import { CgWorkAlt } from "react-icons/cg";
 
 export const links = [
   {
