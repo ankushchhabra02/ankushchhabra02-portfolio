@@ -21,8 +21,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ankush Chhabra | MERN Developer",
   description: "Ankush Chhabra is a MERN Developer",
+  verification: {
+    google: "053-ynswpjiNRNP8I50PAtp5IBrz7O-rcMkedFIggSU",
+  },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
