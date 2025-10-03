@@ -1,8 +1,25 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+  FaUserGraduate,
+  FaProjectDiagram,
+  FaLaptopCode,
+} from "react-icons/fa";
+import {
+  SiMongodb,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiTypescript,
+  SiSocketdotio,
+  SiRazorpay,
+} from "react-icons/si";
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
+
 const About = () => {
   const { ref } = useSectionInView("About", 0.6);
 
@@ -15,65 +32,99 @@ const About = () => {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        Hey! I'm <span className="font-medium">Ankush Chhabra</span>, a
-        passionate{" "}
-        <span className="font-medium">Full-Stack MERN Developer</span> who loves
-        building <span className="italic">clean, scalable, and performant</span>{" "}
-        web applications. I specialize in creating full-stack solutions using{" "}
-        <span className="font-medium">
-          MongoDB, Express.js, React (Next.js), and Node.js
-        </span>
-        .
+      <SectionHeading>About Me</SectionHeading>
+
+      {/* Short bio */}
+      <p className="mb-6">
+        Hi! I’m <span className="font-medium">Ankush Chhabra</span>, a{" "}
+        <span className="font-medium">Full-Stack Developer</span> with hands-on
+        experience in building{" "}
+        <span className="italic">scalable, performant, and user-friendly</span>{" "}
+        applications. During my{" "}
+        <span className="font-medium">6-month internship at ExpertBuddy</span>,
+        I worked on <span className="font-medium">SEO optimization (SSR)</span>,{" "}
+        <span className="font-medium">real-time systems with sockets</span>, and
+        achieved <span className="font-medium">90+ Lighthouse scores</span>{" "}
+        while building a scalable group lessons booking system.
       </p>
-      I’ve worked on a variety of projects—from e-commerce platforms to tools
-      like a <span className="font-medium">weather app</span> and a{" "}
-      <span className="font-medium">subscription tracker API</span>. Whether
-      it's designing intuitive frontends or building robust backend APIs,{" "}
-      <span className="italic">
-        I enjoy bringing ideas to life through code
-      </span>
-      . While pursuing a degree in{" "}
-      <span className="font-medium">Computer Science and Engineering</span>, I
-      dove deep into full-stack development and honed my skills through{" "}
-      <span className="font-medium">
-        real-world projects, hackathons, and certifications
-      </span>
-      . <span className="italic">My favorite part of programming</span> is
-      solving problems and creating smooth user experiences with{" "}
-      <span className="italic">efficient and well-structured code</span>.
-      <p className="mb-3">
-        My core stack includes{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        , but I’m also familiar with{" "}
-        <span className="font-medium">
-          TypeScript, Express.js, Tailwind CSS
-        </span>
-        , and tools like{" "}
-        <span className="font-medium">Postman, Figma, and Git</span>. I'm always
-        eager to learn new technologies and best practices to grow as a
-        developer.
+
+      <p className="mb-6">
+        Beyond my internship, I’ve built impactful projects like{" "}
+        <span className="font-medium">Yappr</span> (a real-time chat app with{" "}
+        <SiSocketdotio className="inline text-gray-600" title="Socket.io" />{" "}
+        Socket.io) and <span className="font-medium">LaxmiChitFund</span> (a
+        crowdfunding platform with{" "}
+        <SiRazorpay className="inline text-blue-600" title="Razorpay" />{" "}
+        Razorpay integration). My focus is always on{" "}
+        <span className="italic">performance, security, and usability</span>.
       </p>
-      <p className="mb-3">
-        I am currently looking for a{" "}
-        <span className="font-medium">
-          full-time role as a software developer
-        </span>{" "}
-        where I can contribute, learn, and build meaningful products.
+
+      <p className="mb-10">
+        I’ve solved{" "}
+        <span className="font-medium">250+ problems on LeetCode</span>,
+        qualified <span className="font-medium">TCS NQT (Java 88.9%)</span>, and
+        I’m passionate about building products that balance{" "}
+        <span className="italic">speed, scalability, and user experience</span>.
+        Currently, I’m open to{" "}
+        <span className="font-medium">SDE/Software Engineer roles</span> where I
+        can contribute my full-stack expertise while continuing to grow.
       </p>
-      <p>
-        <span className="italic">When I’m not coding</span>, you’ll find me
-        exploring new tech trends, sharpening my{" "}
-        <span className="font-medium">DSA skills on LeetCode</span>, or engaging
-        with <span className="font-medium">developer communities</span> and
-        staying connected with fellow tech enthusiasts. I also enjoy listening
-        to music, diving into{" "}
-        <span className="font-medium">design inspirations</span>, and staying
-        curious about the world around me.
-      </p>
+
+      {/* Tech stack icons */}
+      <div className="flex flex-wrap items-center justify-center gap-6 text-4xl mb-12">
+        <FaReact title="React" className="text-sky-500" />
+        <SiNextdotjs title="Next.js" className="text-black dark:text-white" />
+        <FaNodeJs title="Node.js" className="text-green-600" />
+        <SiMongodb title="MongoDB" className="text-green-500" />
+        <SiTypescript title="TypeScript" className="text-blue-500" />
+        <SiTailwindcss title="Tailwind CSS" className="text-cyan-500" />
+        <FaGitAlt title="Git" className="text-orange-500" />
+      </div>
+
+      {/* Mini timeline */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-left max-w-6xl mx-auto">
+        <motion.div
+          className="p-5 rounded-lg bg-white/50 dark:bg-white/10 shadow"
+          whileHover={{ scale: 1.05 }}
+        >
+          <h3 className="flex items-center gap-2 font-semibold">
+            <FaUserGraduate className="text-indigo-600" /> Education
+          </h3>
+          <p className="text-sm mt-1">
+            B.Tech in <span className="font-medium">Computer Science</span>,
+            where I discovered and honed my passion for full-stack development.
+          </p>
+        </motion.div>
+
+        <motion.div
+          className="p-5 rounded-lg bg-white/50 dark:bg-white/10 shadow"
+          whileHover={{ scale: 1.05 }}
+        >
+          <h3 className="flex items-center gap-2 font-semibold">
+            <FaProjectDiagram className="text-green-600" /> Projects
+          </h3>
+          <p className="text-sm mt-1">
+            Created <span className="font-medium">Yappr</span> (real-time chat)
+            and <span className="font-medium">LaxmiChitFund</span> (crowdfunding
+            platform) alongside multiple side projects focused on performance &
+            usability.
+          </p>
+        </motion.div>
+
+        <motion.div
+          className="p-5 rounded-lg bg-white/50 dark:bg-white/10 shadow"
+          whileHover={{ scale: 1.05 }}
+        >
+          <h3 className="flex items-center gap-2 font-semibold">
+            <FaLaptopCode className="text-red-600" /> Today
+          </h3>
+          <p className="text-sm mt-1">
+            Solving <span className="font-medium">DSA problems</span>, exploring{" "}
+            <span className="font-medium">new technologies</span>, and seeking{" "}
+            <span className="font-medium">SDE opportunities</span>.
+          </p>
+        </motion.div>
+      </div>
     </motion.section>
   );
 };

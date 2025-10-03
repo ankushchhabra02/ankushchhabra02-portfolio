@@ -7,6 +7,7 @@ import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
+import MobileMenu from "@/components/mobile-menu";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,6 +44,7 @@ export default function RootLayout({
             {children}
             <Footer />
             <Toaster position="top-right" />
+            <MobileMenu />
           </ActiveSectionContextProvider>
           <ThemeSwitch />
         </ThemeContextProvider>
